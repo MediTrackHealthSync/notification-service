@@ -1,0 +1,9 @@
+spring:
+  data:
+    mongodb:
+      database: health_sync_db
+      uri: mongodb://localhost:27017/health_sync_db
+  application:
+    name: NotificationService
+server:
+  port: 8083
