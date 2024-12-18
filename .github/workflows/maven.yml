@@ -9,7 +9,7 @@ on:
 env:
   PROJECT_ID: ${{secrets.GKE_PROJECT}}
   SI_CLUSTER: health-sync
-  SI_ZONE: us-central1-a
+  SI_ZONE: us-central1
   DEPLOYMENT_NAME: notification-service
   IMAGE: notification-service
   TAG: prod
