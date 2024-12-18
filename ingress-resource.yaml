@@ -10,24 +10,24 @@ spec:
   rules:
     - http:
         paths:
+          - path: /api/v1/patient-record-service
+            pathType: Prefix
+            backend:
+              service:
+                name: patient-record-service
+                port:
+                  number: 80
+          - path: /api/v1/appointment-scheduling-service
+            pathType: Prefix
+            backend:
+              service:
+                name: appointment-scheduling-service
+                port:
+                  number: 80
           - path: /api/v1/notification-service
             pathType: Prefix
             backend:
               service:
                 name: notification-service
-                port:
-                  number: 80
-          - path: /api/v1/contributor-management-service
-            pathType: Prefix
-            backend:
-              service:
-                name: contributor-management-service
-                port:
-                  number: 80
-          - path: /api/v1/commit-management-service
-            pathType: Prefix
-            backend:
-              service:
-                name: commit-management-service
                 port:
                   number: 80
