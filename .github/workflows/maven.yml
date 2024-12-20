@@ -64,3 +64,5 @@ jobs:
           kubectl apply -f deployment.yaml
           kubectl rollout restart deployment $DEPLOYMENT_NAME
           kubectl get services -o wide
+          
+          
