@@ -3,9 +3,6 @@ server:
   servlet:
     context-path: /api/v1/notification-service
 
-github:
-  issue-detail-url: https://api.github.com/repos/microsoft/azure-maven-plugins/issues
-
 spring:
   data:
     mongodb:
